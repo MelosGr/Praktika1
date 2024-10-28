@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Tech News</title>
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+
+<body>
+    <section id="body1">
+        <div id="div1">
+
+            <p id="p1"style="font-family:Lucida Sans">Sign-in</p>
+    
+            <div id="div2">
+                <label style="color: white; font-family:Lucida Sans" for="Emri"><span id="s1">Name</span></label> <br>
+                <input type="text"> 
+                  
+            </div>
+            <!---------------------------------------------------------------------------->
+            <div id="div3">
+                <label style="color: white; font-family:Lucida Sans" for="mbiemri"><span id="s2">Lastname</span></label><br>
+                <input type="text">
+            </div>
+    
+            <!---------------------------------------------------------------------------->
+    
+            <div id="div4">
+                <label style="color: white; font-family:Lucida Sans" for="Email"><span id="s1">Email</span></label><br>
+                <input type="text">
+            </div>
+    
+            <!---------------------------------------------------------------------------->
+    
+            <div id="div5">
+                <label style="color: white; font-family:Lucida Sans"  for="Address"><span id="s2">Address</span></label> <br>
+                <input type="text">
+            </div>
+    
+            <!---------------------------------------------------------------------------->
+    
+            <div id="div6">
+               <label id="in1" style="color: white; font-family:Lucida Sans" for="password"><span id="s2">Password</span></label> <br>
+               <input type="password" id="password">
+               <p id="p2"></p>
+            </div>
+    
+            <!---------------------------------------------------------------------------->
+    
+            <div id="div7">
+                <label style="color: white; font-family:Lucida Sans"  for="Phone" ><span id="s3">Phone Number</span></label> <br>
+                <input type="text">
+            </div>
+    
+           <button id="btn9" onclick=inputi()><span style="font-weight: bold; font-size: 15px;">Sign-in now</span></a></button>
+    
+        </div>
+    
+    
+        <script>
+            function inputi(){
+                let a=document.getElementById('password').value;
+                let b=a.length
+                
+                if(b<1){
+                    alert("please fill out your form")
+                }
+    
+                else if (b<5){
+                    document.getElementById('p2').innerHTML='easy password'
+                    document.getElementById('p2').style.backgroundColor="red"
+                    document.getElementById('p2').style.width="95px"
+                }
+    
+                else if (b>=4 && b<8){
+                    document.getElementById('p2').innerHTML='medium password'
+                    document.getElementById('p2').style.backgroundColor="orange"
+                    document.getElementById('p2').style.width="124px"
+                }
+    
+                else {
+                    document.getElementById('p2').innerHTML='strong password'
+                    document.getElementById('p2').style.backgroundColor="green"
+                    document.getElementById('p2').style.width="120px"
+                    
+                    setTimeout(function() {
+                           window.location.href = "homepage.html";
+                    }, 2000);
+                } 
+            }
+        </script>
+</body>
+</html>

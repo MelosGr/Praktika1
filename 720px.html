@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    width: auto;
+    height: 130px;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+}
+
+#logo1{
+    width: 350px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+nav ul{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 35px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+#l1{
+   display: none;
+}
+
+nav a{
+    height: 100%;
+    font-size: 40px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+nav a:hover{
+    transform: scale(1.1); /* Scale up the link text on hover */
+    color: #497dc0; /* Change text color on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 1px;
+    height: 100vh;
+    width: 250px;
+    z-index: 109;
+    background-color: rgb(5, 5, 5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide sidebar by default */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#l1{
+    display: none;
+}
+
+
+
+.sidebar li{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.sidebar a:hover{
+    transform: scale(1.1); /* Scale up the link text on hover */
+    color: #497dc0; /* Change text color on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+
+#l2 {
+    position: absolute;
+    margin-left: 150px; /* Adjust spacing from the right if needed */
+    margin-top: 5px;
+}
+
+#l2:hover{
+    transform: none
+}
+
+
+
+
+#in1{
+    width: 300px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 70px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+
+#btn1{
+    width: 50px;
+    height: 26px;
+    margin-top: 52px;
+    margin-left: -52px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(227, 223, 223);
+}
+
+#sign_in{
+    width: 30px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+
+/*Main Page*/
+#main-page {
+    width: auto;
+    height: 500px;
+    display: flex;
+}
+
+/*Article 1*/
+#news1 {
+    position: absolute;
+    display: block;
+    width: 700px;
+    height: 400px;
+    margin-top: 55px;
+    margin-left: 200px;
+}
+
+#foto1 {
+    width: 700px;
+    height: 400px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out; /* Add smooth transition */
+}
+#foto1:hover {
+    width: 730px;
+    height: 430px;
+    box-shadow: 10px 10px 55px rgba(45, 71, 185, 0.7); /* Improved box-shadow */
+}
+
+#p1 {
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    margin-top: -160px;
+    margin-left: 20px;
+    color: white;
+    text-shadow:
+     -1.5px -1.5px 0 #000, 
+     1.5px -1.5px 0 #000, 
+     -1.5px 1.5px 0 #000,
+      1.5px 1.5px 0 #000;
+}
+
+#btnn{
+    display: none;
+}
+
+#vertical-line {
+    border-left: 2px solid rgb(198, 197, 197);
+    height: 400px;
+    margin-left: 1000px;
+    margin-top: 55px;
+}
+
+
+/*Article 2*/
+#news2 {
+    float: left;
+    margin-left: 80px;
+    margin-top: 85px;
+}
+#new2 {
+    float: left;
+    width: 130px;
+    height: 120px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Use transform */
+}
+#new2:hover {
+    transform: scale(1.12); /* Scale the image instead of changing width/height */
+    box-shadow: 5px 5px 35px rgba(45, 71, 185, 0.7); /* Improved box-shadow */
+}
+
+#p2 {
+    float: left;
+    font-size: 20px;
+    color: red;
+    margin-left: 15px;
+}
+#s2 {
+    color: black;
+    font-size: 20px;
+    margin-top: -20px;
+}
+#btn2 {
+    float: left;
+    font-size: 16px;
+    margin-top: 100px;
+    margin-left: -250px;
+    background: none;
+    border: none;
+}
+
+/*Article 3*/
+
+#news3 {
+    float: left;
+    margin-left: -398px;
+    margin-top: 270px;
+}
+
+#new3 {
+    float: left;
+    width: 130px;
+    height: 120px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Use transform */
+}
+
+#new3:hover {
+    transform: scale(1.12); /* Scale the image instead of changing width/height */
+    box-shadow: 5px 5px 35px rgba(45, 71, 185, 0.7); /* Improved box-shadow */
+}
+
+
+
+
+
+
+/*Footer*/
+
+#footer{
+    width: auto;
+    height: auto;
+    margin-top: 80px;
+    background-color: rgb(16, 23, 32);
+    display: flex;
+    position: static;
+}
+
+
+#p5 {
+    font-size: 40px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 200px;
+    display: inline; /* Ensure it's treated as inline */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+#s6 {
+    color: rgb(255, 0, 0);
+    display: inline; 
+}
+
+#footer-section1{
+    margin-top: 150px;
+    margin-left: -200px;
+    width: 450px;
+    float: left;
+}
+
+#pf{
+    color: white;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+
+#v1{
+    border-left: 2.5px solid rgb(198, 197, 197);
+    height: 225px;
+    margin-left: -25px;
+    margin-right: 60px;
+    margin-top: -100px
+}
+
+
+#footer-section2{
+    float: left;
+    margin-top: 250px;
+    margin-left: 60px;
+    display: flex;
+}
+
+
+#a1{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#v2{
+    border-left: 2.5px solid rgb(198, 197, 197);
+    height: 225px;
+    margin-left: 60px;
+    margin-top: -100px;
+}
+
+#a2{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin-left: 60px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#v3{
+    border-left: 2.5px solid rgb(198, 197, 197);
+    height: 225px;
+    margin-left: 60px;
+    margin-top: -100px;
+}
+
+
+#v4{
+    border-left: 2.5px solid rgb(198, 197, 197);
+    height: 225px;
+    margin-left: 60px;
+    margin-top: -100px;
+}
+
+#a1:hover, #a2:hover {
+    transform: scale(1.1); /* Scale up the link text on hover */
+    color: #497dc0; /* Change text color on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+
+
+#social-media{
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    margin-left: 100px; 
+    margin-top: 100px;
+    float: left;
+    line-height: 1.8;
+}
+
+#p6, #p7 {
+    font-size: 26px;
+    color: rgba(26, 96, 218, 0.918);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; 
+    margin-top: -15px;
+    margin-bottom: 35px; /* Add some space between the links */
+    text-decoration: none; 
+    padding: 8px 20px; /* Add some padding for better appearance */
+    border: 2px solid rgba(26, 96, 218, 0.918); /* Add a border */
+    border-radius: 40px; /* Make the corners round */
+    display: inline-block; /* Ensure the border fits around the text */
+}
+
+#p6:hover, #p7:hover {
+    transform: scale(1.2); /* Scale up the text/icons slightly on hover */
+    color: rgb(228, 25, 25); /* Change color on hover */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow on hover */
+    border-color: rgb(228, 25, 25); /* Change border color on hover */
+}
+
+
+
+#rights{
+    display: flex;
+    margin-top: 420px;
+    width: auto;
+    margin-left: -1350px;
+}
+
+#p8{
+    font-size: 25px;
+    color: white;
+}
+
+#p9{
+    font-size: 25px;
+    color: white;
+    margin-left: 900px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 420px){
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    width: auto;
+    height: 80px;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+}  
+
+#logo1{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+#defaultbar{
+    display: none;
+}
+
+#l1 {
+    display: block;  /* Or 'flex', depending on your layout needs */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: -20px;
+    height: 100vh;
+    width: 100px;
+    z-index: 109;
+    background-color: rgb(5, 5, 5);
+    backdrop-filter: blur(10px);
+    display: none; /* Hide sidebar by default */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+.sidebar li{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sidebar a{
+    width: 100%;
+    font-size: 20px;
+    margin-left: -20px;
+}
+
+.sidebar a:hover{
+    transform: scale(1.1); /* Scale up the link text on hover */
+    color: #497dc0; /* Change text color on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+
+#l2 {
+    position: absolute;
+    margin-left: 45px; /* Adjust spacing from the right if needed */
+    margin-top: 5px;
+}
+
+#l2:hover{
+    transform: none
+}
+
+
+#in1{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+
+#btn1{
+    position: absolute;
+    width: 50px;
+    height: 22px;
+    margin-top: 32px;
+    margin-left: 268px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(227, 223, 223);
+}
+
+#sign_in{
+    width: 30px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 190px;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+#main-page {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+#news1 {
+    position: absolute;
+    display: block;
+    width: 650px;
+    height: 300px;
+    margin-top: 55px;
+    margin-left: 15px;
+}
+
+#foto1 {
+    width: 380px;
+    height: 250px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out; /* Add smooth transition */
+}
+
+#p1 {
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 395px;
+    color: black;
+    text-shadow: none;
+}
+
+#btnn{
+    display: block; /* This will make the button visible */
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0; /* Adjust this based on how you want it positioned */
+    color: black;
+    background: none;
+     border: none;
+}
+
+#vertical-line {
+    display: none;
+}
+
+
+/*Article 2*/
+#news2 {
+        margin-top: 480px; /* Adjust to stack below #news1 */
+        margin-left: 10px;
+    }
+
+#new2 {
+    width: 155px;
+    height: 125px;
+}
+
+#new2:hover{
+    transform: none;
+}
+
+#p2 {
+    font-size: 18px;
+    color: red;
+    margin-top: -90px; 
+    margin-left: 160px; 
+}
+
+    
+#s2 {
+    display: none; 
+}
+
+    
+#btn2 {
+    font-size: 15px;
+    margin-top: -60px; 
+    margin-left: 160px;
+    background: none;
+    border: none;
+}
+
+
+/*Article 3*/
+#news3 {
+        margin-top: 80px; /* Position directly below #news2 */
+        margin-left: 10px;
+    }
+
+#new3 {
+    width: 155px;
+    height: 125px;
+}
+
+#new3:hover{
+    transform: none;
+}
+
+#p3 {
+    font-size: 18px;
+    color: red;
+    margin-top: 35px; 
+    margin-left: 160px; 
+}
+
+    
+#s3 {
+    display: none; 
+}
+
+    
+#btn3{
+    font-size: 15px;
+    position: relative;
+    top: -60px; /* Moves it up */
+    margin-left: 160px;
+    background: none;
+    border: none;
+}
+
+
+
+
+/*Footer*/
+
+#footer{
+    width: auto;
+    height: 1080px;
+    margin-top: 50px;
+    background-color: rgb(16, 23, 32);
+    display: flex;
+    position: static;
+}
+
+#p5 {
+    font-size: 35px;
+    color: white;
+    margin-left: 65px;
+    margin-top: 50px;
+    width: 200px;
+    display: inline; /* Ensure it's treated as inline */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+#s6 {
+    color: rgb(255, 0, 0);
+    display: inline; 
+}
+
+#footer-section1{
+    margin-top: 150px;
+    margin-left: -215px;
+    width: 350px;
+    float: left;
+}
+
+#pf{
+    color: white;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+#v1{
+    display: none;
+}
+
+#footer-section2{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 140px;
+    display: flex;
+}
+
+
+#a1{
+    display: block;
+
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    margin-left: 5px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#v2{
+    transform: rotate(90deg);
+    border-bottom: 2.5px solid rgb(198, 197, 197);
+    height: 255px;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+#a2{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-left: -75px;
+    margin-top: 220px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#v3{
+    transform: rotate(90deg);
+    border-bottom: 2.5px solid rgb(198, 197, 197);
+    height: 255px;
+    margin-left: -55px;
+    margin-top: 220px;
+}
+
+#a3{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-left: -85px;
+    margin-top: 425px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#v4{
+    display: none;
+}
+
+
+
+
+#social-media{
+    position: absolute;
+    display: flex;
+    flex-direction: row; /* Stack the links vertically */
+    margin-left: 20px; 
+    margin-top: 950px;
+    float: left;
+    line-height: 1.8;
+}
+
+#p6, #p7 {
+    font-size: 26px;
+    color: rgba(26, 96, 218, 0.918);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; 
+    margin-top: -15px;
+    margin-left: 45px; /* Add some space between the links */
+    text-decoration: none; 
+    padding: 8px 20px; /* Add some padding for better appearance */
+    border: 2px solid rgba(26, 96, 218, 0.918); /* Add a border */
+    border-radius: 40px; /* Make the corners round */
+    display: inline-block; /* Ensure the border fits around the text */
+}
+
+
+#rights {
+    display: block; /* Ensure it's visible */
+    margin-top: 980px;
+    margin-left: -350px;
+    text-align: center; 
+    z-index: 10; 
+}
+
+#rights p {
+    font-size: 20px; 
+    color: white; 
+    display: block; 
+}
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="bodyy">
+        <div id="header">
+            <img id="logo1" src="foto/logo-removebg-preview.png" alt="">
+    
+            <nav>
+                <ul id="defaultbar"> 
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    
+                </ul>
+        
+                <ul class="sidebar"> 
+                    <li id="l2" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+    
+    
+            <input id="in1" type="text" placeholder="Search News">
+            <button id="btn1">Search</button>
+            
+            <a id="sign_in" href="sign-in.html"><img  style="color: white;" src="foto/login_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+
+
+            <li id="l1" onclick=showSidebar()><a id="linkim"  href="#"><svg xmlns="http://www.w3.org/2000/svg" height="43px" viewBox="0 -960 960 960" width="43px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </div>
+
+        <div id="main-page">
+            <!--Article 1-->
+            <div id="news1">
+                <a href="news1.html"><img id="foto1" src="foto/news1.jpg" alt=""></a>
+                <p id="p1"><b>Gemini AI introduces Imagen 3 <br> an innovative image generation tool <br> that allows users to create high-quality visuals <br> simply by typing descriptive text prompts</b></p>
+                <button id="btnn"><a style="text-decoration: none;" href="news1.html">Read the Article -></a></button>
+            </div>
+
+            <div id="vertical-line"></div>
+
+            <!--Article 2-->
+            <div id="news2">
+                <a href="news2.html"><img id="new2" src="foto/news2.jpg" alt=""></a>
+                <p id="p2">AI-Driven Innovations: <br> <span id="s2">Artificial intelligence continues <br> to dominate the tech scene</span></p>
+                <button id="btn2"><a style="text-decoration: none;" href="news2.html">Read the Article -></a></button> 
+            </div>
+
+            <!--Article 3 -->
+            <div id="news3">
+                <a href="news3.html"><img id="new3" src="foto/news3.jpg" alt=""></a>
+                <p id="p3">6G and Connectivity:  <br> <span id="s3">6G technology is projected<br> to happen around 2030</span></p><br>
+                <button id="btn3"><a style="text-decoration: none;" href="news3.html">Read the Article -></a></button>
+            </div>
+        </div>
+
+    </div>
+
+
+        <!--Footer-->
+        <div id="footer">
+
+            <p id="p5">
+                <i>NextGen</i><span id="s6"><b>Tech News</b></span>
+            </p>
+    
+            <div id="footer-section1">
+                <p id="pf">This portal is maintained by NextGen Tech News Materials and information
+                    on this portal may not be copied, printed or used in any other form for profit purposes.</p>
+            </div>
+    
+            
+    
+            <div id="footer-section2">
+                <div id="v1"></div>
+                <a id="a1" href="homepage.html">Home</a>
+                <div id="v2"></div>
+                <a id="a2" href="articles.html">Articles</a>
+                <div id="v3"></div>
+                <a id="a3" href="about.html">About Us</a>
+                <div id="v4"></div>
+            </div>
+    
+            <div id="social-media">
+                <a href="https://instagram.com/" target="_blank"><p id="p6"><i class="fab fa-instagram"></i></p></a>
+                <a href="https://www.facebook.com/" target="_blank"><p id="p7"><i class="fab fa-facebook"></i></p></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><p id="p7"><i class="fab fa-twitter"></i></p></a>
+                <a href="https://www.linkedin.com/" target="_blank"><p id="p7"><i class="fab fa-linkedin"></i></p></a> 
+            </div>
+            
+            <div id="rights">
+                <p id="p8">All Rights Reserved: NextGen<span id="s6"><b>Tech News</b></span></p>
+            </div>
+        </div>
+
+
+
+    <script>
+        function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+        sidebar.style.display = 'flex'; // Show sidebar
+    }
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none'; // Hide sidebar
+}
+
+    </script>
+</body>
+</html>

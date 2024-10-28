@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Tech News</title>
+    <link rel="stylesheet" href="topnews1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <img id="logo1" src="foto/logo-removebg-preview.png" alt="">
+
+        <nav>
+            <ul id="defaultbar"> 
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+            <ul class="sidebar"> 
+                <li id="l2" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="43px" viewBox="0 -960 960 960" width="43px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <input id="in1" type="text" placeholder="Search News">
+        <button id="btn1">Search</button>
+        
+        <a id="sign_in" href="sign-in.html"><img style="color: white;" src="foto/login_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+
+        <li id="l1" onclick="showSidebar()">
+            <a id="linkim" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="43px" viewBox="0 -960 960 960" width="43px" fill="white">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a>
+        </li>
+    </div>
+
+    <!--Main Section-->
+
+    <div id="h1">
+        <p style="margin-left: 450px;" id="p1">6G and Connectivity</p>
+    </div>
+
+    <div id="paragrafi">
+        <p id="p2">
+            A key aspect of 6G is its focus on connecting the unconnected. As global internet access remains uneven, 6G aims to bridge
+             this digital divide by enhancing connectivity in rural and underserved areas. Technologies like satellite networks and 
+             advanced beamforming will play a crucial role in extending high-speed internet access to remote locations, empowering 
+             communities and fostering economic growth.
+        </p>
+    </div>
+
+    <div id="foto1">
+        <img id="img1" src="foto/news3.jpg" alt="">
+    </div>
+
+    <div id="paragrafii">
+        <p id="p2">
+            As the world becomes increasingly interconnected, the demand for faster, more reliable communication technologies has never been 
+            greater. Enter 6G, the sixth generation of wireless technology, poised to revolutionize connectivity and reshape how we
+             interact with the digital landscape. While 5G has already transformed various sectors, 6G is set to take this
+              transformation to the next level, offering unprecedented speeds, ultra-low latency, and the ability to
+               connect a multitude of devices seamlessly.<br> <br>
+            </p>
+
+        <p style="margin-top: 20px;" id="p2">
+            At its core, 6G is envisioned to deliver speeds of up to 100 gigabits per second, a dramatic leap from the capabilities of 5G. 
+            This advancement will enable real-time data transfer for applications that require instantaneous communication, such as 
+            augmented reality (AR), virtual reality (VR), and holographic communications. Imagine attending a meeting as a hologram
+             or experiencing a concert as if you were physically present, all made possible through the immense bandwidth and 
+             low latency of 6G.<br> <br>
+        </p>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+
+        <p id="p5">
+            <i>NextGen</i><span id="s6"><b>Tech News</b></span>
+        </p>
+
+        <div id="footer-section1">
+            <p id="pf">This portal is maintained by Gazeta Express sh.p.k.. Materials and information
+                on this portal may not be copied, printed or used in any other form for profit purposes.</p>
+        </div>
+
+        
+
+        <div id="footer-section2">
+            <div id="v1"></div>
+            <a id="a1" href="homepage.html">Home</a>
+            <div id="v2"></div>
+            <a id="a2" href="articles.html">Articles</a>
+            <div id="v3"></div>
+            <a id="a3" href="about.html">About Us</a>
+            <div id="v4"></div>
+        </div>
+
+        <div id="social-media">
+            <a href="https://instagram.com/" target="_blank"><p id="p6"><i class="fab fa-instagram"></i></p></a>
+            <a href="https://www.facebook.com/" target="_blank"><p id="p7"><i class="fab fa-facebook"></i></p></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><p id="p7"><i class="fab fa-twitter"></i></p></a>
+            <a href="https://www.linkedin.com/" target="_blank"><p id="p7"><i class="fab fa-linkedin"></i></p></a> 
+        </div>
+        
+        <div id="rights">
+            <p id="p8">All Rights Reserved: NextGen<span id="s6"><b>Tech News</b></span></p>
+        </div>
+    </div>
+    <script>
+        function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+    </script>
+</body>
+</html>

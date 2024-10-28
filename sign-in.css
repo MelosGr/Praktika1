@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#body1 {
+    background: linear-gradient(rgba(39, 39, 39, 0), rgb(46, 5, 170)), url(foto/background.jpg);
+    background-size: cover; 
+    background-position: top center; 
+    height: 689px; 
+    padding: 20px; 
+    margin: 0; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+
+#p1{
+    margin-left: 320px;
+    margin-top: 20px;
+    display: block;
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+}
+
+#div1{
+    background-color: rgb(22, 22, 42);
+    border: 2px solid black;
+    width: 760px;
+    height: 475px;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-top: 130px;
+}
+
+#div2{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#div3{
+    position: absolute;
+    margin-left:500px ;
+    margin-top: 50px;
+}
+
+#div4{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+#div5{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 500px;
+}
+
+#div6{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+#div7{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 500px;
+}
+
+#btn9{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 340px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 90px;
+}
+
+#p2{
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    #body1 {
+        background: linear-gradient(rgba(39, 39, 39, 0), rgb(46, 5, 170)), url(foto/background.jpg);
+        background-size: cover; 
+        background-position: top center; 
+        height: 602px; 
+        padding: 20px; 
+        margin: 0; 
+        position: relative; 
+        overflow: hidden; 
+    }
+
+
+    #div1{
+        background-color: rgb(22, 22, 42);
+        border: 2px solid black;
+        width: 760px;
+        height: 475px;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+}
+
+
+@media screen and (max-width: 720px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    #body1 {
+        background: linear-gradient(rgba(39, 39, 39, 0), rgb(46, 5, 170)), url(foto/background.jpg);
+        background-size: cover; 
+        background-position: top center; 
+        height: 602px; 
+        padding: 20px; 
+        margin: 0; 
+        position: relative; 
+        overflow: hidden; 
+    }
+
+
+    #div1{
+        background-color: rgb(22, 22, 42);
+        border: 2px solid black;
+        width: 680px;
+        height: 455px;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    #p1{
+        position: absolute;
+        margin-left: 275px;
+    }
+
+    #div2{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+    
+    #div4{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 200px;
+    }
+    
+    #div6{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 305px;
+    }
+
+
+    #div3{
+        position: absolute;
+        margin-left: 480px;
+        margin-top: 100px;
+    }
+    
+    #div5{
+        position: absolute;
+        margin-left: 480px;
+        margin-top: 200px;
+    }
+    
+    #div7{
+        position: absolute;
+        margin-left: 480px;
+        margin-top: 305px;
+    }
+
+    #btn9{
+        position: absolute;
+        margin-top: 380px;
+        margin-left: 300px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        height: 30px;
+        width: 90px;
+    }
+    
+
+}
+
+@media screen and (max-width: 420px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    #body1 {
+        background: linear-gradient(rgba(39, 39, 39, 0), rgb(46, 5, 170)), url(foto/background.jpg);
+        background-size: cover; 
+        background-position: top center; 
+        width: 380px;
+        height: 862px; 
+        padding: 20px; 
+        margin: 0; 
+        position: relative; 
+        overflow: hidden; 
+    }
+
+    #div1{
+        background-color: rgb(22, 22, 42);
+        border: 2px solid black;
+        width: 370px;
+        height: 730px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-top: 50px;
+    }
+
+    #p1{
+        position: absolute;
+        margin-left: 115px;
+    }
+
+    #s1{
+        margin-left: 60px;
+    }
+
+    #s2{
+        margin-left: 50px;
+    }
+
+    #s3{
+        margin-left: 30px;
+    }
+
+
+    #div2{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    #div3{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+    
+    #div4{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 400px;
+    }
+
+    #div5{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 500px;
+    }
+    
+    #div6{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 305px;
+    }
+    
+    #div7{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 605px;
+    }
+
+
+    #btn9{
+        position: absolute;
+        margin-top: 680px;
+        margin-left: 142px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        height: 30px;
+        width: 90px;
+    }
+
+}
